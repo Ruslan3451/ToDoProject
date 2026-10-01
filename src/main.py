@@ -13,3 +13,7 @@ def delete_task(number):
 add_task("Вивчити Git")
 add_task("Створити репозиторій")
 show_tasks()
+def search_tasks(query):
+    for task in tasks:
+        if query in task:
+            print(task)
